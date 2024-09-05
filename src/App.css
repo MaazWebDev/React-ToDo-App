@@ -1,0 +1,146 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  color: #00796b;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+#todo-input-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 12px;
+  margin-right: 10px;
+  border: 2px solid #00796b;
+  background-color: #fff;
+  color: #333;
+  border-radius: 4px;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  background-color: #f1f1f1;
+  box-shadow: 0 2px 10px rgba(0, 121, 107, 0.3);
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  background-color: #00796b;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #004d40;
+  transform: scale(1.05);
+}
+
+#todo-list-dom {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.todo-list-task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.todo-list-task:last-child {
+  border-bottom: none;
+}
+
+p {
+  margin: 0;
+  font-size: 18px;
+}
+
+#button-cont {
+  display: flex;
+}
+
+.task-button {
+  background: none;
+  border: none;
+  color: #00796b;
+  margin-left: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.task-button:hover {
+  color: #ecf0ef;
+  transform: scale(1.1);
+}
+
+#elsed-para {
+  text-align: center;
+  color: #777;
+  font-size: 16px;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  input[type="text"] {
+    max-width: 100%;
+    margin-right: 5px;
+  }
+
+  button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  #todo-list-dom {
+    padding: 15px;
+  }
+
+  .todo-list-task {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #button-cont {
+    margin-top: 10px;
+    justify-content: flex-start;
+  }
+
+  .task-button {
+    font-size: 18px;
+  }
+}
